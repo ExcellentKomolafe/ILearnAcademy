@@ -1,0 +1,13 @@
+.radial-blue{
+  background: linear-gradient(
+    to bottom right,
+    rgb(0, 74, 83),
+    rgb(34, 24, 71)
+    );
+}
+
+.body{
+  background-color: rgba(0, 95, 90, 0.37);
+}
+@import "tailwindcss"
+
