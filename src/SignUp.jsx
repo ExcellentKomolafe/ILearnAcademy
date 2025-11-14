@@ -90,7 +90,7 @@ export default function SignUp({ onRegistered }) {
             </h1>
             <p className="text-emerald-800 my-2">
             <a href="https://chat.whatsapp.com/HBHfiVZLpdPFahNer3u6YL">
-                  click To Join the Whatsapp group
+                  Click To Join the Whatsapp group
                 </a>
             </p>
             <p className="text-sm mt-2 text-slate-500 dark:text-slate-300">
@@ -103,7 +103,7 @@ export default function SignUp({ onRegistered }) {
               <strong>Registration submitted.</strong>
               <div className="text-sm">
                 <a href="https://chat.whatsapp.com/HBHfiVZLpdPFahNer3u6YL">
-                  CLICK To Join the Whatsapp group
+                  Click To Join the Whatsapp group
                 </a>
               </div>
             </div>
