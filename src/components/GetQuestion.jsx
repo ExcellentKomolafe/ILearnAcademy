@@ -291,15 +291,15 @@ export default function GetQuestion({ subject, type, year }) {
     <>
       <main className="min-h-[60vh] p-6 bg-slate-50 dark:bg-slate-900 transition-colors">
         <div className="max-w-4xl mx-auto">
-          <div className="sticky top-4 z-30">
-            <div className="rounded-full bg-white/70 dark:bg-slate-800/80 backdrop-blur px-4 py-3 shadow flex items-center justify-between gap-4 border border-slate-200/50 dark:border-slate-700">
-              <div className="flex items-center gap-4">
+          <div className="sticky top-4 z-30 mx-auto">
+            <div className="rounded-xl sm:rounded-full mx-auto bg-slate-800/80 backdrop-blur w-4/5  px-4 sm:py-2  py-1 shadow flex items-center justify-center sm:justify-between gap-4 border border-slate-200/50 dark:border-slate-700">
+              <div className="flex mx-auto sm:flex-row flex-col items-center gap-4 w-fit">
                 <div className="text-sm font-medium text-slate-800 dark:text-slate-100">
                   {subject?.toUpperCase() || "Subject"} —{" "}
                   {type?.toUpperCase() || "TYPE"} — {year || ""}
                 </div>
 
-                <div className="h-3 w-48 bg-slate-200 rounded-full overflow-hidden">
+                <div className="h-3 w-48  bg-slate-200 rounded-full overflow-hidden">
                   <div
                     className="h-full bg-linear-to-r from-sky-500 to-indigo-600 transition-all"
                     style={{
@@ -316,36 +316,36 @@ export default function GetQuestion({ subject, type, year }) {
                   {answeredCount} / {totalQuestions} answered
                 </div>
               </div>
-
-              <div className="flex items-center gap-2">
-                <button
-                  onClick={() => {
-                    setAnswers([]);
-                    sessionStorage.removeItem("answers_v1");
-                  }}
-                  className="px-3 py-1 rounded-md text-sm border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
-                >
-                  Clear answers
-                </button>
-
-                <button
-                  onClick={() => setShowConfirmSubmit(true)}
-                  disabled={!canSubmit || submitting}
-                  className={`px-3 py-1 rounded-md text-sm font-medium ${
-                    canSubmit
-                      ? "bg-emerald-600 text-white hover:bg-emerald-700"
-                      : "bg-slate-200 text-slate-400 cursor-not-allowed"
-                  } transition`}
-                >
-                  {submitting ? (
-                    <FaSpinner className="animate-spin inline-block mr-2" />
-                  ) : null}
-                  Submit
-                </button>
-              </div>
             </div>
           </div>
+          <div className="flex my-6 mx-auto items-center">
+            <div className="mx-auto">
+              <button
+                onClick={() => {
+                  setAnswers([]);
+                  sessionStorage.removeItem("answers_v1");
+                }}
+                className="px-3 py-1 rounded-md text-sm border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 mx-4 transition"
+              >
+                Clear answers
+              </button>
 
+              <button
+                onClick={() => setShowConfirmSubmit(true)}
+                disabled={!canSubmit || submitting}
+                className={`px-3  py-1 rounded-md text-sm font-medium ${
+                  canSubmit
+                    ? "bg-emerald-600 text-white hover:bg-emerald-700"
+                    : "bg-slate-200 text-slate-400 cursor-not-allowed"
+                } transition`}
+              >
+                {submitting ? (
+                  <FaSpinner className="animate-spin inline-block mr-2" />
+                ) : null}
+                Submit
+              </button>
+            </div>
+          </div>
           <div className="mt-6">
             {loading ? (
               <Skeleton />
@@ -470,7 +470,7 @@ export default function GetQuestion({ subject, type, year }) {
                     )}
                   </fieldset>
 
-                  <div className="mt-6 flex items-center justify-between gap-3">
+                  <div className="mt-6 sm:flex items-center justify-between gap-3">
                     <div className="flex items-center gap-2">
                       <button
                         onClick={prev}
@@ -496,7 +496,7 @@ export default function GetQuestion({ subject, type, year }) {
                       </button>
                     </div>
 
-                    <div className="flex items-center gap-3">
+                    <div className="flex mt-4 sm:mt-0 items-center gap-3">
                       <div className="text-sm text-slate-600 dark:text-slate-300">
                         Answered:{" "}
                         <span className="font-medium">{answeredCount}</span>
@@ -524,7 +524,7 @@ export default function GetQuestion({ subject, type, year }) {
                           : "bg-slate-200 text-slate-400 cursor-not-allowed"
                       }`}
                     >
-                      Submit Answers
+                      Submit
                     </button>
 
                     <button

@@ -22,7 +22,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="min-h-screen max-w-screen">
+      <div className="min-h-screen overflow-x-hidden max-w-[98dvw]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route

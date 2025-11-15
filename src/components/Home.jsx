@@ -114,8 +114,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-gray-900 py-12">
-        <div className="max-w-7xl mx-auto flex flex-wrap justify-around gap-8 text-center text-white">
+      <section className="bg-gray-900 overflow-x-hidden py-12">
+        <div className="max-full mx-auto flex flex-wrap justify-around gap-8 text-center text-white">
           <div className="flex flex-col items-center">
             <span className="text-4xl font-bold">50k+</span>
             <span className="text-gray-400">Questions</span>
@@ -126,7 +126,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center">
             <span className="text-4xl font-bold">
-              <FaWhatsapp/>
+              <FaWhatsapp />
             </span>
             <span className="text-gray-400">Free Live Classes</span>
           </div>
