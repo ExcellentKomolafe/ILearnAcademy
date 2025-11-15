@@ -1,16 +1,61 @@
-# React + Vite
+# iLearn Academy – Transforming Minds, Shaping Futures
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+iLearn Academy is an interactive study platform designed to give students seamless access to curated past questions while enabling educators and organizations to collect valuable learner information.  
+Built with a modern React architecture, clean UI/UX principles, and smooth interactions, the platform demonstrates strong frontend engineering, state management, and problem-solving skills.
 
-Currently, two official plugins are available:
+This project highlights my ability to design, structure, and deploy scalable learning interfaces suitable for real-world educational products.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🌟 Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### **User Data Collection (Access Gate)**
+Before accessing any questions, students must fill out a **short form** containing:
+- Name  
+- Email  
+- Phone number  
 
-## Expanding the ESLint configuration
+This form improves engagement tracking, onboarding flow, and user insights.  
+Only after successful submission does the user gain access to the Past Questions interface.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### **Past Questions Viewer**
+- Fetches questions dynamically from an external API  
+- Clean layout for reading questions and answers  
+- Pagination and smooth navigation  
+- Sanitized HTML for safe rendering  
+- Error handling and loading states  
+
+### **Modern, High-Quality UI/UX**
+- Beautiful responsive design (Tailwind CSS)  
+- Framer Motion animations for smooth interactions  
+- Mobile-first layout  
+- Intuitive flow: Form → Question View  
+
+### **Performance Focused**
+- Vite for extremely fast builds  
+- Optimized rendering  
+- API requests cached where applicable  
+
+---
+
+## 🚀 Tech Stack
+
+### **Frontend**
+- React.js (Hooks, modular architecture)  
+- Vite  
+- Tailwind CSS    
+- Axios  
+- DOMPurify (safe HTML rendering)  
+
+### **Core Engineering Concepts Demonstrated**
+- Component-based architecture  
+- Form management  
+- Data validation  
+- State management  
+- API consumption  
+- Clean folder structuring  
+- Deployment-ready production build  
+
+
+git clone https://github.com/your-username/IlearnAcademy.git
+cd IlearnAcademy
