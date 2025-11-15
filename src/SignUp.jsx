@@ -85,12 +85,12 @@ export default function SignUp({ onRegistered }) {
           className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6"
         >
           <header className="mb-4">
-            <h1 className="text-2xl font-semibold text-slate-900 dark:text-white">
-              Register To Acess Free Past Questions
+            <h1 className="text-2xl font-semibold text-slate-900 dark:text-white capitalize">
+              Register To Acess Free Past Questions and live classes
             </h1>
-            <p className="text-emerald-800 my-2">
+            <p className="text-emerald-800 capitalize my-2">
             <a href="https://chat.whatsapp.com/HBHfiVZLpdPFahNer3u6YL">
-                  Click To Join the Whatsapp group
+                  Click To Join the Whatsapp group tutoring and live classes
                 </a>
             </p>
             <p className="text-sm mt-2 text-slate-500 dark:text-slate-300">

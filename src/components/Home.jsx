@@ -12,6 +12,7 @@ import {
   FaCheckCircle,
   FaBolt,
   FaBullseye,
+  FaWhatsapp,
 } from "react-icons/fa";
 
 const features = [
@@ -123,7 +124,12 @@ export default function Home() {
             <span className="text-4xl font-bold">100%</span>
             <span className="text-gray-400">Free Access</span>
           </div>
-       
+          <div className="flex flex-col items-center">
+            <span className="text-4xl font-bold">
+              <FaWhatsapp/>
+            </span>
+            <span className="text-gray-400">Free Live Classes</span>
+          </div>
         </div>
       </section>
 
@@ -164,7 +170,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How It Works */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-extrabold mb-4">How It Works</h2>
