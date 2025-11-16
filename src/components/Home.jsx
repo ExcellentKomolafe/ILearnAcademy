@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Header from "./Header";
 import Card from "./Card";
 import { Link } from "react-router-dom";
-import Footer from "../Footer"
+import Footer from "../Footer";
 import bgImage3 from "../assets/student-image-1.jpg";
 import {
   FaQuestionCircle,
@@ -89,7 +89,8 @@ export default function Home() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Self-paced learning, curated past questions, instant scoring, and more — all designed for students.
+            Self-paced learning, curated past questions, instant scoring, and
+            more — all designed for students.
           </motion.p>
 
           <motion.div
@@ -104,8 +105,9 @@ export default function Home() {
             >
               Get Started
             </Link>
-            
-             < Link to="/about"
+
+            <Link
+              to="/about"
               className="bg-white/10 border border-white/10 px-6 py-3 rounded-2xl text-white hover:bg-white/20 transition-colors"
             >
               About Us
@@ -133,7 +135,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-br from-slate-900 to-black">
+      <section
+        id="features"
+        className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-br from-slate-900 to-black"
+      >
         <div className="max-w-7xl mx-auto text-center">
           <motion.h2
             className="text-4xl lg:text-5xl font-extrabold text-white mb-4"
@@ -151,7 +156,8 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Everything you need to ace your exams. Fast, simple, and student-centric.
+            Everything you need to ace your exams. Fast, simple, and
+            student-centric.
           </motion.p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -172,7 +178,9 @@ export default function Home() {
 
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-extrabold mb-4">How It Works</h2>
+          <h2 className="text-4xl lg:text-5xl font-extrabold mb-4">
+            How It Works
+          </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
             Follow 3 simple steps to start practicing and tracking your results.
           </p>
@@ -193,7 +201,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
 
       <Footer></Footer>
     </>

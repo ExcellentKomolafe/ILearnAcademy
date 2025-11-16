@@ -8,7 +8,7 @@ export default function Header() {
   const toggleMenu = () => setIsOpen((p) => !p);
 
   return (
-    <header className="fixed inset-x-4 top-4 z-50 rounded-3xl backdrop-blur-md bg-slate-900/60 shadow-md border border-white/10">
+    <header className="fixed inset-x-4 top-4 z-50 rounded-3xl backdrop-blur-md bg-slate-900/50 shadow-md border border-white/10">
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4 gap-4">
         <Link to="/" className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-linear-to-br from-sky-500 to-indigo-500 flex items-center justify-center shadow">
@@ -56,7 +56,7 @@ export default function Header() {
             />
             
             <motion.aside
-              className="fixed top-0 right-0 z-50 h-full w-[92vw] max-w-xs bg-slate-900 shadow-2xl border-l border-white/6 p-6"
+              className="fixed top-0 right-0 z-50 h-full w-[92vw] max-w-xs bg-slate-900/60 shadow-2xl border-l border-white/6 p-6"
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
@@ -64,6 +64,7 @@ export default function Header() {
               role="dialog"
               aria-modal="true"
             >
+             
               <div className="flex items-center justify-between mb-8">
                 <Link to="/" onClick={toggleMenu} className="flex items-center gap-3">
                   <div className="w-9 h-9 rounded-lg bg-linear-to-br from-sky-500 to-indigo-500 flex items-center justify-center text-white font-semibold">
@@ -80,8 +81,8 @@ export default function Header() {
                   <FaTimes className="w-5 h-5  text-slate-100" />
                 </button>
               </div>
-
-              <nav className="flex py-10 bg-slate-900/20 flex-col gap-4 backdrop-blur-3xl shadow-2xl text-slate-100">
+              <div className="bg-slate-900/40 -ml-6  -mt-4 backdrop-blur-3xl backdrop-brightness-50">
+              <nav className="flex py-10 flex-col gap-4 backdrop-blur-3xl shadow-2xl text-slate-100">
                 <Link to="/" onClick={toggleMenu} className="py-3 px-3 rounded-lg hover:opacity-60 duration-300  bg-slate-800 transition">
                   Home
                 </Link>
@@ -94,7 +95,7 @@ export default function Header() {
                
               </nav>
 
-              <div className="mt-6 pt-6 border-t border-slate-200/10">
+              <div className="mt-6 pt-6 border-t border-slate-200/40">
                 <Link
                   to="/signup"
                   onClick={toggleMenu}
@@ -103,6 +104,7 @@ export default function Header() {
                  Register
                 </Link>
                 
+              </div>
               </div>
             </motion.aside>
           </>
