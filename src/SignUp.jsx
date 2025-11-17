@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Footer from "./Footer";
 import { useNavigate } from "react-router-dom";
 export default function SignUp({ onRegistered }) {
-  const endpoint = `https://formspree.io/f/xqapyrbk`;
+  const endpoint = `https://formspree.io/f/mgvrboao`;
   const [form, setForm] = useState({
     name: "",
     email: "",
